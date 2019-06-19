@@ -6,7 +6,7 @@
 /*   By: mciupek <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 01:50:58 by mciupek           #+#    #+#             */
-/*   Updated: 2019/06/19 03:15:31 by mciupek          ###   ########.fr       */
+/*   Updated: 2019/06/19 13:47:58 by mciupek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@ int	main(int argc, char **argv)
 	(void)argc;
 	while (argv[0][++i - 1] != '\0')
 		write(1, &argv[0][i - 1], 1);
+	write(1, &"\n", 1);
 	return (1);
 }
